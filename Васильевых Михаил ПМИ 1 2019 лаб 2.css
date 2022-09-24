@@ -1,0 +1,120 @@
+.grid_table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(13, 233, 145);
+    height: auto;
+    min-height: 95vh;
+    min-width: 95vh;
+}
+
+.tl_cl:nth-child(-n+6){
+    height: 4rem;
+    width: 5rem;
+}
+
+.tl_cl:nth-child(n+7){
+    height: 4rem;
+    width: 10rem;
+}
+
+.tl_cl:nth-child(-n+6):hover{
+    background-color: blue;
+}
+
+.tl_cl:nth-child(n+7):hover{
+    background-color: rgb(16, 178, 223);
+}
+
+.tl_cl{
+    background-color: blueviolet;
+    border: solid 0.1vh;
+}
+.tl{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tl, .tr, .bl, .br{
+    border: solid grey 0.2vh;
+}
+
+.tr{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.tr *{
+    color: blueviolet;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.tr input{
+    border: 10px;
+}
+
+.tr input:focus{
+    border: 20px;
+    color: red;
+}
+
+.bl *{
+    color: blueviolet;
+    font-family: sans-serif;
+}
+.bl h1{
+    text-align: center;
+}
+
+.bl p{
+    margin-left: 20px;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+.bl p::selection{
+    background-color: white;
+    color: green;
+}
+.br li{
+    list-style: none;
+    color: blueviolet;
+    font-family: sans-serif;
+    font-size:x-large;
+
+}
+
+.br{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.br li::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: URL(https://cdn.tlgrm.app/stickers/0bd/31d/0bd31db6-a240-4931-bc36-e47e6d2d0dcc/192/4.webp);
+    background-size: contain;
+}
+.br li:nth-child(2n){
+    font-weight: bold;
+}
+
+.br li:nth-child(3n){
+    cursor: pointer;
+}
+
+.block{
+    background-color: blueviolet;
+    position: fixed;
+    bottom: 52.5%;
+    left: 49.4%;
+    height: 2vh;
+    width: 2vh;
+    
+}
